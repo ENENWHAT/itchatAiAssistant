@@ -1,7 +1,7 @@
 {
-  "openAIKey": "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",
-  "azureVoiceKey": "10f3714472ef43ec8b0658205d0c3f39",
-  "azureVoiceRegion": "eastus",
-  "model": "gpt-3.5-turbo-1106",
-  "baseUrl": "https://zwd.icu"
+  "openAIKey": "你的openAIKey",
+  "azureVoiceKey": "azure语音服务的key",
+  "azureVoiceRegion": "azure语音服务的区域 例如 eastus",
+  "model": "gpt的模型 gpt-3.5-turbo-1106 或者 gpt-4-1106-preview",
+  "baseUrl": "反向代理的url的地址 后面不用加/v1"
 }
