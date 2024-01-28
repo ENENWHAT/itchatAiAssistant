@@ -1,0 +1,172 @@
+{
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "get_weather",
+        "description": "获取天气，用户询问是否下雨、是否下雪、是否晴天都调用这个方法， 天气已通过其他方法实现,只需返回一个完成的信号"
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "answer_with_voice",
+        "description": "用语音回答提出的问题，要求用语音回答，或者适合用语音回答做情绪化表达的，调用这个方法",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "mind": {
+              "type": "string",
+              "enum": ["upbeat","affectionate","angry","assistant","calm","chat","cheerful","depressed","disgruntled","embarrassed","gentle","hopeful","narration-relaxed","poetry-reading","sad","whispering","terrified"],
+              "description": "说话时的心情,状态"
+            },
+            "word": {
+              "type": "string",
+              "description": "要说的话。说话的内容最好符合mind"
+            }
+          },
+          "required": ["mind", "word"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "change_voice",
+        "description": "调用方法前先询问要改的声音,而不是把默认值传进去,男[云希,云剑,云扬,云峰,云浩,云霞,云野,云泽,云杰,云逸（多语言）],女[晓晓,小怡,小晨,小涵,小梦,小墨,小秋,小蕊,小霜,小璇,小妍,小友,小珍,小晨（多语言）,小柔,晓晓（方言）,晓晓（多语言）]",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "enum": [ "云希","云剑","云扬", "云峰","云浩","云霞","云野","云泽","云杰","云逸（多语言）","晓晓","小怡","小晨","小涵","小梦","小墨","小秋","小蕊","小霜","小璇","小妍","小友","小珍","小晨（多语言）","小柔","晓晓（方言）","晓晓（多语言）"],
+              "description": "拥有这个声音的人的名字"
+            }
+          },
+          "required": ["name"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_Calender",
+        "description": "获取日历,某天的日历,只需返回已完成"
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_hl",
+        "description": "获取汇率,只需返回已完成"
+      }
+    },{
+      "type": "function",
+      "function": {
+        "name": "get_kd",
+        "description": "获取快递单号,查快递,只需返回已完成"
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_weibo_realTimeHot",
+        "description": "最新消息，新闻，热搜。获取到最新的微博热搜总榜的链接"
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_maoYan_rank",
+        "description": "返回猫眼电影的票房榜查看链接"
+      }
+    },{
+      "type": "function",
+      "function": {
+        "name": "gen_pic",
+        "description": "根据提示词生成一张图片，图片制作，图片生成,不返回链接",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string",
+              "description": "生成图片的提示词"
+            }
+          },
+          "required": ["prompt"]
+        }
+      }
+    },{
+      "type": "function",
+      "function": {
+        "name": "edit_pic",
+        "description": "修改该图中的某个区域，列如，图片右边加一个苹果,传入的是提示词和一个保持不变的区域的方位描述,不返回链接",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string",
+              "description": "要修改的区域的提示词，列如 红色的苹果"
+            },
+            "mask": {
+              "type": "string",
+              "enum": ["左上","左下","右上","右下","左边","右边","中间","四周"],
+              "description": "保持不变的区域,有8个区域可以选择"
+            }
+          },
+          "required": ["prompt","mask"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "trans_pic",
+          "description": "生成图像变体,随机对图像做调整，修改图片，改变图片,变美,变帅,变丑"
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "vision",
+        "description": "分析一张图片,调用gpt4的vision功能",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string",
+              "description": "分析这张图的哪一个方面"
+            }
+          },
+          "required": ["prompt"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "sendToFriend",
+        "description": "给好友发送文本消息,可以延时",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "word": {
+              "type": "string",
+              "description": "要发送的文本内容"
+            },
+            "name": {
+              "type": "string",
+              "enum": "",
+              "description": "好友的名字"
+            },
+            "minutes": {
+              "type": "integer",
+              "description": "延时几分钟发送，默认为0,表示不延时"
+            }
+          },
+          "required": ["word","name","minutes"]
+        }
+      }
+    }
+  ]
+}

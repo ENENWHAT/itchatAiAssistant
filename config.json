@@ -1,0 +1,7 @@
+{
+  "openAIKey": "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",
+  "azureVoiceKey": "10f3714472ef43ec8b0658205d0c3f39",
+  "azureVoiceRegion": "eastus",
+  "model": "gpt-3.5-turbo-1106",
+  "baseUrl": "https://zwd.icu"
+}
