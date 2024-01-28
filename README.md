@@ -5,8 +5,8 @@
 # 前言
 `代码写的很烂勿喷：`
 
-在csdn看了 [COW AI接入到微信 保姆教程 ](https://blog.csdn.net/m0_69655483/article/details/134170135?spm=1001.2014.3001.5501)大佬的这篇文章后，我也试着部署了一下。
- 部署成功后。我想改进几个方面：
+在csdn看了 [COW AI接入到微信 保姆教程 ](https://blog.csdn.net/m0_69655483/article/details/134170135?spm=1001.2014.3001.5501)大佬的这篇文章后，我也试着部署了一下。  
+ 部署成功后。我想改进几个方面：   
  		*1.ai与多个好友聊天共享记忆的问题*  
  		*2.与ai对话没有切换声音的选项  语音对话没有情绪 这个Azure的接口可以实现*  
  由于ai assistant可以开启多个线程，实现一个助手和多人聊天分别记忆并长期存储。 于是我尝试使用ai assitant 结合 itchat 实现微信机器人。
@@ -20,7 +20,7 @@
 
 # 一、依赖安装
 
- python必须是3.8.1以上的，我用的3.10.7的itchat必须是1.5.0.dev才可以 亲测其他itchat版本都不可用  openai必须最新版本。 最新版本支持assistant  
+ python必须是3.8.1以上的，我用的3.10.7的  itchat必须是1.5.0.dev才可以,亲测其他itchat版本都不可用    openai必须最新版本。最新版本支持assistant    
   pip3 install itchat-uos==1.5.0.dev0  
   pip3 install --upgrade openai  
    
