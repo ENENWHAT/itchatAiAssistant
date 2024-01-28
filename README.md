@@ -21,8 +21,11 @@
 # 一、依赖安装
 
  python必须是3.8.1以上的，我用的3.10.7的  itchat必须是1.5.0.dev才可以,亲测其他itchat版本都不可用    openai必须最新版本。最新版本支持assistant    
+
+  ```python
   pip3 install itchat-uos==1.5.0.dev0  
-  pip3 install --upgrade openai  
+  pip3 install --upgrade openai 
+```
    
 # 二、反向代理
 由于无法直连ai官网。所以需要构建一个反向代理地址来链接openai api网址
