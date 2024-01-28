@@ -1,0 +1,2 @@
+# itchatAiAssistant
+itchat结合aiassistant实现微信聊天小助手
