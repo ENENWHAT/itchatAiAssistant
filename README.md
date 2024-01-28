@@ -39,6 +39,8 @@ client = OpenAI(api_key="你的openai的key", base_url="你的代理地址/v1")
 
 # 三、azure注册
 如果你没有azure账号，那赶紧注册一个，免费送一年。 注册需要外币信用卡。 动卡空间app可以解决。  azure有免费服务器 免费语音服务都是挺不错的。注册之后通过教程的方法获取语音的key
+
 [Azure注册地址](https://azure.microsoft.com/zh-cn/get-started/welcome-to-azure/?subscriptionId=fb407ffc-43a6-462d-bb96-4ac955ba76c5)
+
 [Azure语音服务使用教程](https://zhuanlan.zhihu.com/p/627165015?utm_id=0)
 
