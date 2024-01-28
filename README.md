@@ -55,6 +55,7 @@ nohup python3 myitchat.py & tail -f nohup.out
 
 # 总结
 大家可以添加我的小助手微信号来体验一下：
-**==ww885087==**
+
+**ww885087**
 
 
