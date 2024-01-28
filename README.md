@@ -43,4 +43,18 @@ client = OpenAI(api_key="你的openai的key", base_url="你的代理地址/v1")
 [Azure注册地址](https://azure.microsoft.com/zh-cn/get-started/welcome-to-azure/?subscriptionId=fb407ffc-43a6-462d-bb96-4ac955ba76c5)
 
 [Azure语音服务使用教程](https://zhuanlan.zhihu.com/p/627165015?utm_id=0)
+# 四、执行
+先修改config.json文件
+
+命令行运行然后扫码登录即可
+
+```bash
+nohup python3 myitchat.py & tail -f nohup.out
+```
+
+
+# 总结
+大家可以添加我的小助手微信号来体验一下：
+**==ww885087==**
+
 
