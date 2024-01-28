@@ -24,7 +24,9 @@
 
   ```python
   pip3 install itchat-uos==1.5.0.dev0  
-  pip3 install --upgrade openai 
+```
+  ```python
+ pip3 install --upgrade openai
 ```
    
 # 二、反向代理
